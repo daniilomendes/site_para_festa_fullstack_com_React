@@ -1,0 +1,90 @@
+POST http://localhost:3000/api/services
+Content-Type: application/json
+
+{
+      "name": "Decoração",
+      "description": "Escolha a decoração para sua festa, e nós a montamos.",
+      "price": 1400,
+      "image": "https://images.unsplash.com/photo-1478146059778-26028b07395a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=892&q=80"
+    }
+
+###
+GET http://localhost:3000/api/services
+
+###
+GET http://localhost:3000/api/services/64edf7dd054b8843ca37414d
+
+###
+DELETE http://localhost:3000/api/services/64edf7dd054b8843ca37414d
+
+###
+PUT http://localhost:3000/api/services/64edfd15027f045cf2c0dd1a
+Content-Type: application/json
+
+{
+    "name": "TESTE ATUALIZACAO",
+    "description": "Outra descrição",
+    "price": 2000,
+    "image": "https://images.unsplash.com/photo-1688493747282-f537650d7329?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxN3x8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+}
+
+###
+POST http://localhost:3000/api/parties
+Content-Type: application/json
+
+{
+    "title": "Meu evento 2",
+    "author": "Danilo",
+    "description": "Festa festiva",
+    "budget": 9000,
+    "image": "https://images.unsplash.com/photo-1688493747282-f537650d7329?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxN3x8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60",    
+    "services": [
+        {
+            "name": "Algum serviço 1",
+            "description": "Outra descrição",
+            "price": 3000,
+            "image": "https://images.unsplash.com/photo-1688493747282-f537650d7329?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxN3x8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+        },
+        {
+            "name": "Algum serviço 2",
+            "description": "Outra descrição",
+            "price": 1600,
+            "image": "https://images.unsplash.com/photo-1688493747282-f537650d7329?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxN3x8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+        }
+    ]
+}
+
+###
+GET http://localhost:3000/api/parties
+
+###
+GET http://localhost:3000/api/parties/64ee1dfd4b386f5fa2a45a1a
+
+###
+DELETE http://localhost:3000/api/parties/64ee1dfd4b386f5fa2a45a1a
+
+###
+PUT http://localhost:3000/api/parties/64ee1f764b386f5fa2a45a1c
+Content-Type: application/json
+
+{
+    "title": "Meu evento 3",
+    "author": "Danilo",
+    "description": "Festa festiva",
+    "budget": 9000,
+    "image": "https://images.unsplash.com/photo-1688493747282-f537650d7329?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxN3x8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60",    
+    "services": [
+        {
+            "name": "Algum serviço 1",
+            "description": "Outra descrição",
+            "price": 3000,
+            "image": "https://images.unsplash.com/photo-1688493747282-f537650d7329?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxN3x8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+        },
+        {
+            "name": "Algum serviço 2",
+            "description": "Outra descrição",
+            "price": 1600,
+            "image": "https://images.unsplash.com/photo-1688493747282-f537650d7329?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxN3x8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+        }
+    ]
+}
